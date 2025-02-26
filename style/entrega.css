@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+}
+ 
+#c1 {
+    top: 16px;
+    left: 90px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c2 {
+    top: 16px; 
+    left: 350px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c3{
+    position: absolute;
+    left: 680px;
+    color: #1E6B82;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c4{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 48rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+#c5{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 65rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+
+nav a {
+    color: #1E6B82;
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+
+
+.container {
+    width: 1440px;
+    height: 1080px;
+    background: white;
+    position: relative;
+}
+
+.linha-horizontal-topo {
+    width: 1273px;
+    height: 0px;
+    left: 78px;
+    top: 3599px;
+    position: absolute;
+    border: 1px solid #CDCCCC;
+}
+
+.linha-horizontal-meio {
+    width: 514px;
+    height: 0px;
+    left: 463px;
+    top: 1771px;
+    position: absolute;
+    border: 1px solid #6A3D21;
+}
+
+.menu-colecoes {
+    width: 132px;
+    left: 93px;
+    top: 38px;
+    position: absolute;
+    color: #1E6B82;
+    font-size: 35px;
+    font-family: Rambla;
+    font-weight: 400;
+}
+
+.menu-cuidados {
+    width: 136px;
+    left: 346px;
+    top: 40px;
+    position: absolute;
+    color: #1E6B82;
+    font-size: 35px;
+    font-family: Rambla;
+    font-weight: 400;
+}
+
+.menu-politica {
+    width: 108px;
+    height: 45px;
+    left: 926px;
+    top: 39px;
+    position: absolute;
+    color: #1E6B82;
+    font-size: 35px;
+    font-family: Rambla;
+    font-weight: 400;
+}
+
+.menu-contato {
+    width: 156px;
+    height: 45px;
+    left: 1171px;
+    top: 41px;
+    position: absolute;
+    color: #1E6B82;
+    font-size: 35px;
+    font-family: Rambla;
+    font-weight: 400;
+}
+
+.rodape {
+    width: 1440px;
+    height: 140px;
+    left: -1px;
+    top: 940px;
+    position: absolute;
+    background: #1E6B82;
+}
+
+.linha-menu {
+    width: 148px;
+    height: 0px;
+    left: 906px;
+    top: 94px;
+    position: absolute;
+    border: 2px solid #1E6B82;
+}
+
+.logo {
+    left: 641px;
+    top: 28px;
+    position: absolute;
+    color: #1E6B82;
+    font-size: 55px;
+    font-family: Maiandra GD;
+    font-weight: 400;
+}
+
+.titulo-politica {
+    left: 844px;
+    top: 200px;
+    position: absolute;
+    color: #6A3D21;
+    font-size: 60px;
+    font-family: Maiandra GD;
+    font-weight: 400;
+}
+
+.descricao-politica {
+    width: 511px;
+    left: 845px;
+    top: 300px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    font-family: Rambla;
+    font-weight: 400;
+}
+
+.botao-ver-politica {
+    width: 461px;
+    height: 74px;
+    left: 540px;
+    top: 750px;
+    position: absolute;
+    background: #CB8B59;
+    border-radius: 9px;
+}
+
+.texto-botao-ver-politica {
+    left: 600px;
+    top: 765px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: Rambla;
+    font-weight: 400;
+}
+
+.imagem-principal {
+    width: 748px;
+    height: 458px;
+    left: 40px;
+    top: 180px;
+    position: absolute;
+}
+
+footer {
+    width: 95rem;
+    height: 140px;
+    background-color: #1E6B82;
+    position: absolute;
+    bottom: 0;
+}

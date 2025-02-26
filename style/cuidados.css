@@ -1,0 +1,152 @@
+body{
+    width: 90rem;
+    height: 81.5rem;
+    background: #FFF;
+    margin: 0;
+}
+#c1 {
+    top: 16px;
+    left: 90px;
+    position: absolute;
+    width: 8.25rem;
+    color: #FEFEFE; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c2 {
+    top: 16px; 
+    left: 350px;
+    position: absolute;
+    width: 8.25rem;
+    color: #FEFEFE; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c3{
+    position: absolute;
+    left: 40rem;
+    color: #FFF;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c4{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 48rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+#c5{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 65rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+
+ 
+   
+    
+.img1{
+    width: 50.75rem;
+    height: 81.5rem;
+    flex-shrink: 0;
+}
+
+
+.container {
+    position: relative; /* Para a navbar se basear nela */
+    width: 50.75rem;
+    height: 81.5rem;
+}
+
+.img1 {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: absolute;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+
+.cuidados img{
+    width: 6.25rem;
+    height: 5.9375rem;
+    flex-shrink: 0;
+}
+
+h1{
+    color: #1E6B82;
+    font-family: "Maiandra GD";
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 90px;
+}
+.cuidados p{
+    color: #000;
+    text-align: center;
+    font-family: Rambla;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.display{
+    display: flex;
+}
+.cuidados{
+    margin-left: 110px;
+    margin-top: 50px;
+}
+.imgtext{
+    display: flex;
+    margin-top: 55px;
+}
+
+.imgtext p{
+    margin-top: -0.1px;
+    margin-left: 40px;
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+
+.footer{
+    width: 300%;
+    height: 8.75rem;
+    flex-shrink: 0;
+    background: #1E6B82;
+}
+#t1{
+    margin-top: 1rem;
+}
+#t2{
+    margin-top: 1rem;
+}

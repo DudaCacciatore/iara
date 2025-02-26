@@ -1,0 +1,196 @@
+body{
+    background: #FFF;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ 
+#c1 {
+    top: 16px;
+    left: 90px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c2 {
+    top: 16px; 
+    left: 350px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c3{
+    position: absolute;
+    left: 680px;
+    color: #1E6B82;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c4{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 48rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+#c5{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 65rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+
+
+
+.container {
+    height: 1101px;
+    background-color: white;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    color: #1E6B82;
+    font-size: 55px;
+    font-family: Maiandra GD, sans-serif;
+}
+
+nav a {
+    color: #1E6B82;
+    font-size: 35px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+
+
+.conteudo-principal {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    text-align: center;
+    padding-left: 30rem;
+}
+
+.compre-agora {
+    color: #1E6B82;
+    font-size: 70px;
+    font-family: Maiandra GD, sans-serif;
+    margin-bottom: 20px;
+}
+
+.mensagem {
+    color: black;
+    font-size: 30px;
+    font-family: Rambla, sans-serif;
+    width: 504px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.botao-enviar-mensagem {
+    background-color: #CB8B59;
+    color: white;
+    font-size: 30px;
+    font-family: Rambla, sans-serif;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+footer {
+    width: 95rem;
+    height: 140px;
+    background-color: #1E6B82;
+    position: absolute;
+    bottom: 0;
+}
+.display{
+    display: flex;
+}
+.conteudo-principal{
+    margin-left: 25rem;
+}
+.img1{
+    margin-top: 8rem;
+    margin-left: 6rem;
+}
+
+/* Estilo do pop-up */
+#popup {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none; /* Começa invisível */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
+.cancel {
+    background: gray;
+    color: white;
+}
+

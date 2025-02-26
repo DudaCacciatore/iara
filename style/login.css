@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    font-family: Rambla, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+ 
+#c1 {
+    top: 16px;
+    left: 90px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c2 {
+    top: 16px; 
+    left: 350px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c3{
+    margin-left: 680px;
+    color: #1E6B82;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c4{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 48rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+#c5{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 65rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+
+.logo {
+    color: #1E6B82;
+    font-size: 55px;
+    font-family: Maiandra GD, sans-serif;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-grow: 1;
+}
+
+.secao-boas-vindas {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #C2916B;
+    
+}
+
+.texto-boas-vindas {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 12rem;
+}
+
+.area-admin {
+    display: flex;
+    align-items: center;
+    margin-left: 12rem;
+}
+
+.texto-admin {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.icone-admin {
+    width: 60px;
+    height: 60px;
+    background-color: #6E9AAF;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icone-admin::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-user'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E");
+    mask-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secao-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-login {
+    width: 60%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-usuario, .titulo-senha {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.entrada-email, .entrada-senha {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.entrada-email input, .entrada-senha input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.botao-entrar {
+    background-color: #6E9AAF;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #1E6B82;
+    height: 100px;
+}
+
+footer .conteudo-rodape{
+    width: 100%;
+    height: 100%;
+}

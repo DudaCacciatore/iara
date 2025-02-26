@@ -1,0 +1,118 @@
+body{
+    width: 90rem;
+    height: 68.8125rem;
+    background: #FFF;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+ 
+#c1 {
+    top: 16px;
+    left: 90px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c2 {
+    top: 16px; 
+    left: 350px;
+    position: absolute;
+    width: 8.25rem;
+    color: #1E6B82; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c3{
+    margin-left: 680px;
+    color: #1E6B82;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#c4{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 48rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+#c5{
+    position: absolute;
+    top: 16px; /* Ajuste conforme necessário */
+    left: 65rem; /* Ajuste conforme necessário */
+    width: 6.75rem;
+    height: 2.8125rem;
+    color: #1E6B82;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 200px;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+}
+
+
+.display{
+    margin-left: 12rem;
+    margin-top: 60px;
+}
+
+.display img{
+    margin-left: 20px;
+}
+
+.display .img3{
+    width: 350px;
+    height: 605px;
+    margin-bottom: -10px;
+}
+
+h1{
+    color: #CB8B59;
+    font-family: "Maiandra GD";
+    font-size: 4.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 21rem;
+    margin-top: 50px;
+}
+.footer{
+    margin-top: 30px;
+    width: 95rem;
+    height: 8.75rem;
+    flex-shrink: 0;
+    background: #1E6B82;
+}
+p{
+    color: #000;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 59.75rem;
+    padding-left: 18rem;
+    margin-top: -2rem;
+}
