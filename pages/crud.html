@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área Restrita</title>
+    <title>CRUD Produtos</title>
 </head>
 <body>
-    texto
+    <h2>CRUD Produtos</h2>
+
+    <h3>Adicionar Produto</h3>
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="text" id="colecao" placeholder="Coleção" required>
+    <input type="number" id="preco" placeholder="Preço" required>
+    <input type="text" id="imagem_url" placeholder="URL da Imagem" required>
+    <button onclick="criarProduto()">Adicionar</button>
+
+    <h3>Lista de Produtos</h3>
+    <ul id="lista-produtos"></ul>
+
+    <script>
+        const apiUrl = "http://localhost:3000"; // Backend rodando localmente
+
+        async function listarProdutos() {
+            const resposta = await fetch(apiUrl);
+            const produtos = await resposta.json();
+            const lista = document.getElementById("lista-produtos");
+            lista.innerHTML = "";
+
+            produtos.forEach(produto => {
+                lista.innerHTML += `
+                    <li id="produto-${produto._id}">
+                        <strong>${produto.nome}</strong> - R$${produto.preco}
+                        <button onclick="editarProduto('${produto._id}')">✏️ Editar</button>
+                        <button onclick="deletarProduto('${produto._id}')">❌ Excluir</button>
+                    </li>
+                `;
+            });
+        }
+
+        async function criarProduto() {
+            const nome = document.getElementById("nome").value;
+            const colecao = document.getElementById("colecao").value;
+            const preco = document.getElementById("preco").value;
+            const imagem_url = document.getElementById("imagem_url").value;
+
+            await fetch(apiUrl, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nome, colecao, preco, imagem_url })
+            });
+
+            listarProdutos();
+        }
+
+        async function editarProduto(id) {
+            const novoNome = prompt("Novo nome do produto:");
+            const novaColecao = prompt("Nova coleção:");
+            const novoPreco = prompt("Novo preço:");
+            const novaImagem = prompt("Nova URL da imagem:");
+
+            await fetch(`${apiUrl}/${id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ nome: novoNome, colecao: novaColecao, preco: novoPreco, imagem_url: novaImagem })
+            });
+
+            listarProdutos();
+        }
+
+        async function deletarProduto(id) {
+            await fetch(`${apiUrl}/${id}`, { method: "DELETE" });
+            listarProdutos();
+        }
+
+        document.addEventListener("DOMContentLoaded", listarProdutos);
+    </script>
 </body>
 </html>

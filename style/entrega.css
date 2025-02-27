@@ -183,9 +183,9 @@ nav a {
     position: absolute;
     text-align: center;
     color: black;
-    font-size: 35px;
-    font-family: Rambla;
+    font-size: 30px;
     font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .botao-ver-politica {
@@ -199,14 +199,14 @@ nav a {
 }
 
 .texto-botao-ver-politica {
-    left: 600px;
-    top: 765px;
+    left: 590px;
+    top: 768px;
     position: absolute;
     text-align: center;
     color: white;
-    font-size: 35px;
-    font-family: Rambla;
+    font-size: 29px;
     font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .imagem-principal {
