@@ -6,7 +6,7 @@
     <title>CRUD Produtos</title>
 </head>
 <body>
-    <h2>CRUD Produtos</h2>
+    <h2>CRUD</h2>
 
     <h3>Adicionar Produto</h3>
     <input type="text" id="nome" placeholder="Nome" required>
@@ -18,25 +18,16 @@
     <h3>Lista de Produtos</h3>
     <ul id="lista-produtos"></ul>
 
+    <h3>Adicionar ADM</h3>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="senha" placeholder="Senha" required>
+    <button onclick="adicionarAdm()">Adicionar</button>
+
+    <h3>Lista de ADMs</h3>
+    <ul id="lista-adms"></ul>
+
     <script>
         const apiUrl = "http://localhost:3000"; // Backend rodando localmente
-
-        async function listarProdutos() {
-            const resposta = await fetch(apiUrl);
-            const produtos = await resposta.json();
-            const lista = document.getElementById("lista-produtos");
-            lista.innerHTML = "";
-
-            produtos.forEach(produto => {
-                lista.innerHTML += `
-                    <li id="produto-${produto._id}">
-                        <strong>${produto.nome}</strong> - R$${produto.preco}
-                        <button onclick="editarProduto('${produto._id}')">✏️ Editar</button>
-                        <button onclick="deletarProduto('${produto._id}')">❌ Excluir</button>
-                    </li>
-                `;
-            });
-        }
 
         async function criarProduto() {
             const nome = document.getElementById("nome").value;
@@ -47,10 +38,27 @@
             await fetch(apiUrl, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ nome, colecao, preco, imagem_url })
+                body: JSON.stringify({ nome, colecao, preco, imagem_url }),
             });
 
             listarProdutos();
+        }
+
+        async function listarProdutos() {
+            const resposta = await fetch(apiUrl);
+            const produtos = await resposta.json();
+            const lista = document.getElementById("lista-produtos");
+            lista.innerHTML = "";
+
+            produtos.forEach((produto) => {
+                lista.innerHTML += `
+                    <li id="produto-${produto._id}">
+                        <strong>${produto.nome}</strong> - R$${produto.preco}
+                        <button onclick="editarProduto('${produto._id}')">✏️ Editar</button>
+                        <button onclick="deletarProduto('${produto._id}')">❌ Excluir</button>
+                    </li>
+                `;
+            });
         }
 
         async function editarProduto(id) {
@@ -62,7 +70,7 @@
             await fetch(`${apiUrl}/${id}`, {
                 method: "PUT",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ nome: novoNome, colecao: novaColecao, preco: novoPreco, imagem_url: novaImagem })
+                body: JSON.stringify({ nome: novoNome, colecao: novaColecao, preco: novoPreco, imagem_url: novaImagem }),
             });
 
             listarProdutos();
@@ -73,7 +81,59 @@
             listarProdutos();
         }
 
-        document.addEventListener("DOMContentLoaded", listarProdutos);
+        async function adicionarAdm() {
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            await fetch(`${apiUrl}/adm`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, senha }),
+            });
+            console.log(JSON.stringify({ email, senha }))
+
+            listarAdms();
+        }
+
+        async function listarAdms() {
+            const resposta = await fetch(`${apiUrl}/adm`);
+            const adms = await resposta.json();
+            const lista = document.getElementById("lista-adms");
+            lista.innerHTML = "";
+
+            adms.forEach((adm) => {
+                lista.innerHTML += `
+                    <li>
+                        ${adm.email}
+                        <button onclick="editarAdm('${adm._id}')">✏️ Editar</button>
+                        <button onclick="excluirAdm('${adm._id}')">❌ Excluir</button>
+                    </li>
+                `;
+            });
+        }
+
+        async function editarAdm(id) {
+            const novoEmail = prompt("Novo email do ADM:");
+            const novaSenha = prompt("Nova senha do ADM:");
+
+            await fetch(`${apiUrl}/adm/${id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email: novoEmail, senha: novaSenha }),
+            });
+
+            listarAdms();
+        }
+
+        async function excluirAdm(id) {
+            await fetch(`${apiUrl}/adm/${id}`, { method: "DELETE" });
+            listarAdms();
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            listarProdutos();
+            listarAdms();
+        });
     </script>
 </body>
 </html>

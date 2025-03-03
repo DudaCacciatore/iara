@@ -80,3 +80,61 @@ app.put("/:id", async (req, res) => {
     })
     res.send(produtos)
 })
+
+
+// ------ TABELA ADM
+const Adm = mongoose.model('Adm', {
+    email:String,
+    senha:String
+})
+
+app.post("/adm", async (req, res) => {
+    try {
+        const adm = new Adm({
+            email: req.body.email,
+            senha: req.body.senha
+        });
+
+        await adm.save();
+        res.status(201).send(adm); // 201 Created
+    } catch (error) {
+        console.error("Erro ao criar produto:", error);
+        res.status(500).send({ error: "Erro ao criar produto" }); // 500 Internal Server Error
+    }
+});
+
+app.get("/adm", async (req, res) => {
+    const adm = await Adm.find()
+    res.send(adm)
+})
+
+app.delete("/adm/:id", async (req, res) => {
+    const adm = await Adm.findByIdAndDelete(req.params.id)
+    res.send(adm)
+})
+
+app.put("/adm/:id", async (req, res) => {
+    const adm = await Adm.findByIdAndUpdate(req.params.id, {
+        email: req.body.email,
+        senha: req.body.senha
+    })
+    res.send(adm)
+})
+
+
+//Autenticação da existencia do adm
+app.post("/adm/auth", async (req, res) => {
+    const { email, senha } = req.body;
+
+    try {
+        const adm = await Adm.findOne({ email, senha });
+
+        if (!adm) {
+            return res.status(401).send({ message: "Credenciais inválidas" });
+        }
+
+        res.send({ message: "Autenticação bem-sucedida" });
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
