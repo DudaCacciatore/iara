@@ -198,13 +198,15 @@ nav a {
     border-radius: 9px;
 }
 
-.texto-botao-ver-politica {
-    left: 590px;
-    top: 768px;
-    position: absolute;
-    text-align: center;
+#botao{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 55px;
     color: white;
-    font-size: 29px;
+    font-size: 30px;
+    text-align: center;
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }

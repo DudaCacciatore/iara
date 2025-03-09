@@ -70,16 +70,7 @@ body {
     font-size: 1.8rem;
 }
 
-.display{
-    margin-left: 120px;
-    margin-top: 70px;
-}
-.display .img3{
-    margin-left: 15px;
-    width: 77.6rem;
-    margin-top: 1rem;
 
-}
 h1{
     color: #1E6B82;
     font-family: "Maiandra GD";
@@ -96,4 +87,58 @@ h1{
     height: 8.75rem;
     flex-shrink: 0;
     background: #1E6B82;
+}
+
+
+.display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+    margin-left: 75px;
+}
+
+.image-container {
+    position: relative;
+}
+.image-container a{
+    text-decoration: none;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay1, .text-overlay2, .text-overlay3 {
+    position: absolute;
+    bottom: 10px;
+    color: black;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s;
+    margin-left: 30px;
+}
+
+.text-overlay1:hover {
+    color:  #1E6B82;
+}
+
+.text-overlay2:hover {
+    color:  #ab7b1c;
+}
+
+.text-overlay3:hover {
+    color:  #dbb624;
+}
+
+.display .img3{
+    margin-left: 15px;
+    width: 77.9rem;
+    margin-top: 1rem;
 }
