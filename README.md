@@ -9,7 +9,7 @@ Na barra de endereços do navegador, digite o seguinte endereço: .
 
 ## Autores
 
-[Lorena Tavares]()
+[Lorena Tavares](https://github.com/Lorenaatavares)
 
 [Maria Eduarda Cacciato](https://github.com/DudaCacciatore)
 
