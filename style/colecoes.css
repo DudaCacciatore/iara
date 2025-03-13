@@ -2,75 +2,26 @@ body{
     width: 90rem;
     height: 68.8125rem;
     background: #FFF;
-}
-body {
     margin: 0;
     padding: 0;
 }
 
- 
-#c1 {
-    top: 16px;
-    left: 90px;
-    position: absolute;
-    width: 8.25rem;
-    color: #1E6B82; 
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#c2 {
-    top: 16px; 
-    left: 350px;
-    position: absolute;
-    width: 8.25rem;
-    color: #1E6B82; 
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#c3{
-    margin-left: 680px;
-    color: #1E6B82;
-    font-family: "Maiandra GD";
-    font-size: 3.4375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#c4{
-    position: absolute;
-    top: 16px; /* Ajuste conforme necessário */
-    left: 48rem; /* Ajuste conforme necessário */
-    width: 6.75rem;
-    height: 2.8125rem;
-    color: #1E6B82;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 200px;
-}
-#c5{
-    position: absolute;
-    top: 16px; /* Ajuste conforme necessário */
-    left: 65rem; /* Ajuste conforme necessário */
-    width: 6.75rem;
-    height: 2.8125rem;
-    color: #1E6B82;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 200px;
-}
-
-
+/* Fazendo o navbar */
 .navbar a{
+    color: #1E6B82; 
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
+    margin-left: 145px;
+}
+#c3{
+    left: 680px;
+    color: #1E6B82;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
 }
 
-
+/* Título */
 h1{
     color: #1E6B82;
     font-family: "Maiandra GD";
@@ -81,15 +32,8 @@ h1{
     margin-left: 32rem;
     margin-top: 2.5rem;
 }
-.footer{
-    margin-top: 30px;
-    width: 95rem;
-    height: 8.75rem;
-    flex-shrink: 0;
-    background: #1E6B82;
-}
 
-
+/* Imagens */
 .display {
     display: flex;
     flex-wrap: wrap;
@@ -141,4 +85,13 @@ h1{
     margin-left: 15px;
     width: 77.9rem;
     margin-top: 1rem;
+}
+
+/* Footer */
+.footer{
+    margin-top: 30px;
+    width: 95rem;
+    height: 8.75rem;
+    flex-shrink: 0;
+    background: #1E6B82;
 }
