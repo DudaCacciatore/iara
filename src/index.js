@@ -27,10 +27,12 @@ app.listen(port, () => {
 })
 
 
-//Fazendo um modelo de como irá funcionar as tabelas do banco
+//Fazendo um modelo de como irá funcionar os documentos do banco
 
 
 // ------ TABELA PRODUTOS 
+
+//Modelo do documento
 const Produtos = mongoose.model('Produtos', {
     colecao: String,
     nome: String,
@@ -64,7 +66,7 @@ app.get("/", async (req, res) => {
     res.send(produtos)
 })
 
-//Deletando por ID
+//Deletando por id
 app.delete("/:id", async (req, res) => {
     const produtos = await Produtos.findByIdAndDelete(req.params.id)
     res.send(produtos)
@@ -83,11 +85,14 @@ app.put("/:id", async (req, res) => {
 
 
 // ------ TABELA ADM
+
+//Modelo do documento
 const Adm = mongoose.model('Adm', {
     email:String,
     senha:String
 })
 
+//Criando e salvando um novo dado
 app.post("/adm", async (req, res) => {
     try {
         const adm = new Adm({
@@ -103,16 +108,19 @@ app.post("/adm", async (req, res) => {
     }
 });
 
+//Listando todos os dados do banco
 app.get("/adm", async (req, res) => {
     const adm = await Adm.find()
     res.send(adm)
 })
 
+//Deletando por ID
 app.delete("/adm/:id", async (req, res) => {
     const adm = await Adm.findByIdAndDelete(req.params.id)
     res.send(adm)
 })
 
+//Editando por id
 app.put("/adm/:id", async (req, res) => {
     const adm = await Adm.findByIdAndUpdate(req.params.id, {
         email: req.body.email,
