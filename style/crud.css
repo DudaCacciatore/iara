@@ -4,6 +4,22 @@ body {
     background-color: #f4f4f4;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 630px;
+}
+
+/* Título */
+h2{
+    margin-left: -45px;
+}
+
+/* Subtitulo */
+h3{
+    margin-left: 15px;
+}
+
 h2, h3 {
     color: #333; /* Cor escura para os títulos */
     margin-bottom: 10px; /* ERspaço abaixo dos títulos */
@@ -12,13 +28,15 @@ h2, h3 {
 h2{
     font-family: "Maiandra GD";
     font-size: 50px ;
+    color: #1E6B82;
 }
 
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ab7b1c;
 }
 
-
+/* Input */
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -30,28 +48,52 @@ input[type="password"] {
     width: 200px;
 }
 
-button {
-    background-color: #1E6B82;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0f4454; /* Cor de fundo mais escura quando o mouse passa por cima */
-}
-
+/* Lista */
 ul {
-    list-style-type: none; /* Remove os marcadores da lista */
+    list-style-type: none;
     padding: 0;
+    margin-left: -200px;
+    display: inline-block;
 }
 
 li {
-    background-color: #fff;
-    border: 1px solid #ddd;
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
+}
+
+/* Botão */
+button {
+    background-color: #1E6B82;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    margin-top: 15px;
+    margin-left: 70px;
+}
+
+button:hover {
+    background-color: #0f4454; 
+}
+
+/* Botão editar e excluir */
+.editar {
+    background-color: #28a745; 
+    margin-right: -50px;
+    margin-left: 2  0px;
+}
+
+.editar:hover {
+    background-color: #218838; 
+}
+
+.excluir {
+    background-color: #dc3545; 
+}
+
+.excluir:hover {
+    background-color: #c82333; 
 }

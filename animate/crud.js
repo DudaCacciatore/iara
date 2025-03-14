@@ -25,9 +25,9 @@ const apiUrl = "http://localhost:3000"; // Backend rodando localmente
             produtos.forEach((produto) => {
                 lista.innerHTML += `
                     <li id="produto-${produto._id}">
-                        <strong>${produto.nome}</strong> - R$${produto.preco}
-                        <button onclick="editarProduto('${produto._id}')">✏️ Editar</button>
-                        <button onclick="deletarProduto('${produto._id}')">❌ Excluir</button>
+                        <strong>${produto.nome}</strong> - R$${produto.preco} - ${produto.colecao}
+                        <button class="editar" onclick="editarProduto('${produto._id}')">Editar</button>
+                        <button class="excluir" onclick="deletarProduto('${produto._id}')">Excluir</button>
                     </li>
                 `;
             });
@@ -79,8 +79,8 @@ const apiUrl = "http://localhost:3000"; // Backend rodando localmente
                 lista.innerHTML += `
                     <li>
                         ${adm.email}
-                        <button onclick="editarAdm('${adm._id}')">✏️ Editar</button>
-                        <button onclick="excluirAdm('${adm._id}')">❌ Excluir</button>
+                        <button class="editar" onclick="editarAdm('${adm._id}')">Editar</button>
+                        <button class="excluir" onclick="excluirAdm('${adm._id}')">Excluir</button>
                     </li>
                 `;
             });
