@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
- 
+/* Navbar*/
 #c1 {
     top: 16px;
     left: 90px;
@@ -66,25 +66,19 @@ body {
     padding-left: 200px;
 }
 
-
 .navbar a{
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
 }
 
-.logo {
-    color: #1E6B82;
-    font-size: 55px;
-    font-family: Maiandra GD, sans-serif;
-}
-
-
+/* Conteúdo principal */
 .conteudo {
     display: flex;
     flex-grow: 1;
 }
 
+/* Seção boas- vindas ao usuário */
 .secao-boas-vindas {
     width: 40%;
     display: flex;
@@ -95,6 +89,7 @@ body {
     
 }
 
+/* Texto*/
 .texto-boas-vindas {
     font-size: 5rem;
     font-weight: bold;
@@ -134,6 +129,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Seção para usuário logar */
 .secao-login {
     width: 60%;
     display: flex;
@@ -141,6 +137,7 @@ body {
     align-items: center;
 }
 
+/* Classe para os input */
 .caixa-login {
     width: 60%;
     padding: 40px;
@@ -149,11 +146,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Títulos */
 .titulo-usuario, .titulo-senha {
     font-size: 24px;
     margin-bottom: 10px;
 }
-
+/* Input */
 .entrada-email, .entrada-senha {
     border-bottom: 2px solid #ddd;
     margin-bottom: 20px;
@@ -167,6 +165,7 @@ body {
     outline: none;
 }
 
+/* Botão */
 .botao-entrar {
     background-color: #6E9AAF;
     color: white;
@@ -177,6 +176,7 @@ body {
     cursor: pointer;
 }
 
+/* Footer */
 footer {
     background-color: #1E6B82;
     height: 100px;

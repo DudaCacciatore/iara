@@ -1,68 +1,8 @@
 body{
     background: #FFF;
-}
-body {
     margin: 0;
     padding: 0;
 }
-
- 
-#c1 {
-    top: 16px;
-    left: 90px;
-    position: absolute;
-    width: 8.25rem;
-    color: #1E6B82; 
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#c2 {
-    top: 16px; 
-    left: 350px;
-    position: absolute;
-    width: 8.25rem;
-    color: #1E6B82; 
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#c3{
-    position: absolute;
-    left: 680px;
-    color: #1E6B82;
-    font-family: "Maiandra GD";
-    font-size: 3.4375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-#c4{
-    position: absolute;
-    top: 16px; /* Ajuste conforme necessário */
-    left: 48rem; /* Ajuste conforme necessário */
-    width: 6.75rem;
-    height: 2.8125rem;
-    color: #1E6B82;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 200px;
-}
-#c5{
-    position: absolute;
-    top: 16px; /* Ajuste conforme necessário */
-    left: 65rem; /* Ajuste conforme necessário */
-    width: 6.75rem;
-    height: 2.8125rem;
-    color: #1E6B82;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 200px;
-}
-
-
 
 .container {
     height: 1101px;
@@ -70,29 +10,21 @@ body {
     position: relative;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
-.logo {
-    color: #1E6B82;
-    font-size: 55px;
-    font-family: Maiandra GD, sans-serif;
-}
-
-nav a {
-    color: #1E6B82;
-    font-size: 35px;
+/* Navbar */
+.navbar a{
+    color: #1E6B82; 
     text-decoration: none;
-    margin: 0 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
+    margin-left: 145px;
+}
+#c3{
+    left: 680px;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
 }
 
-
+/* Conteúdo principal (imagem, titulo e texto) */
 .conteudo-principal {
     position: absolute;
     top: 200px;
@@ -100,7 +32,11 @@ nav a {
     text-align: center;
     padding-left: 30rem;
 }
+.conteudo-principal{
+    margin-left: 25rem;
+}
 
+/* Título */
 .compre-agora {
     color: #1E6B82;
     font-size: 70px;
@@ -108,6 +44,7 @@ nav a {
     margin-bottom: 20px;
 }
 
+/* Texto */
 .mensagem {
     color: black;
     font-size: 30px;
@@ -117,6 +54,7 @@ nav a {
     line-height: 1.5;
 }
 
+/* Botão */
 .botao-enviar-mensagem {
     background-color: #CB8B59;
     color: white;
@@ -129,22 +67,10 @@ nav a {
     margin-top: 40px;
 }
 
-footer {
-    width: 95rem;
-    height: 140px;
-    background-color: #1E6B82;
-    position: absolute;
-    bottom: 0;
-}
-.display{
-    display: flex;
-}
-.conteudo-principal{
-    margin-left: 25rem;
-}
+/* Imagem */
 .img1{
-    margin-top: 8rem;
-    margin-left: 6rem;
+    margin-top: 5rem;
+    margin-left: 6rem;
 }
 
 /* Estilo do pop-up */
@@ -194,3 +120,11 @@ footer {
     color: white;
 }
 
+/* Footer */
+footer {
+    width: 95rem;
+    height: 140px;
+    background-color: #1E6B82;
+    position: absolute;
+    bottom: 0;
+}
