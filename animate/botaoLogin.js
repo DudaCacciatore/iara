@@ -18,6 +18,7 @@ document.getElementById("botao-entrar").addEventListener("click", async function
         }
     } catch (error) {
         console.error("Erro na autenticação:", error);
+        window.location.replace('IARA')
         alert("Erro na autenticação. Tente novamente.");
     }
 });
