@@ -13,27 +13,21 @@ body {
 /* Título */
 h2{
     margin-left: -45px;
-}
-
-/* Subtitulo */
-h3{
-    margin-left: 15px;
-}
-
-h2, h3 {
-    color: #333; /* Cor escura para os títulos */
-    margin-bottom: 10px; /* ERspaço abaixo dos títulos */
-}
-
-h2{
     font-family: "Maiandra GD";
     font-size: 50px ;
     color: #1E6B82;
 }
 
+/* Subtitulo */
 h3{
+    margin-left: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ab7b1c;
+}
+
+h2, h3 {
+    color: #333; /* Cor escura para os títulos */
+    margin-bottom: 10px; /* ERspaço abaixo dos títulos */
 }
 
 /* Input */

@@ -233,3 +233,12 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0;
 }
+
+.item img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+ 
+  .item.aparecendo img {
+    opacity: 1; 
+  }
