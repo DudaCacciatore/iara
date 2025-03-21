@@ -233,3 +233,26 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0;
 }
+
+/*Imagens aparecendo aos poucos */
+
+.img2, .img3, .img4 {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .img2.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .img3.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .img4.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
