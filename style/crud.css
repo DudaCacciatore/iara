@@ -4,6 +4,7 @@ body {
     background-color: #f4f4f4;
 }
 
+
 .main{
     display: flex;
     flex-direction: column;
@@ -31,6 +32,7 @@ h2, h3 {
 }
 
 /* Input */
+
 input[type="text"],
 input[type="number"],
 input[type="email"],
@@ -41,6 +43,7 @@ input[type="password"] {
     border-radius: 4px;
     width: 200px;
 }
+
 
 /* Lista */
 ul {
@@ -90,4 +93,5 @@ button:hover {
 
 .excluir:hover {
     background-color: #c82333; 
+
 }
