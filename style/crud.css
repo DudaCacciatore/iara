@@ -4,6 +4,7 @@ body {
     background-color: #f4f4f4;
 }
 
+
 .main{
     display: flex;
     flex-direction: column;
@@ -42,6 +43,7 @@ input[type="password"] {
     border-radius: 4px;
     width: 200px;
 }
+
 
 /* Lista */
 ul {
