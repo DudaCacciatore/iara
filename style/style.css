@@ -1,46 +1,52 @@
 body{
     margin: 0px;
 }
+
+/* Navbar */
 #c1, #c2, #c3, #c4, #c5{
     position: absolute;
-    color:  #FFF;; 
-}
-
-#c1 {
-    top: 16px;
-    left: 85px;   
-}
-
-#c2 {
-    top: 16px; 
-    left: 394px;
-}
-
-#c3{
-    font-family: "Maiandra GD";
-    font-size: 3.4375rem;
-    left: 700px;
-    margin-top: -770px;
-
-}
-#c4{
-    top: 16px; 
-    margin-left: 51.5rem; 
-    padding-left: 200px;
-}
-#c5{
-    top: 16px; 
-    left: 71rem;
-    padding-left: 200px;
-}
-
-
-.navbar a{
+    color:  #FFF;
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+#c1, #c2, #c4, #c5{
+    top: 24px;
+}
+ 
+#c1 {
+    left: 125px;
+}
+#c2 {
+    left: 402px;
+}
+#c3{
+    left: 683px;
+    font-family: "Maiandra GD";
+    font-size: 3.4375rem;
+    margin-top: -775px;
 } 
 
+#c4{
+    left: 755px;
+    padding-left: 200px;
+}
+#c5{
+    left: 1007px; 
+    padding-left: 200px;
+}
+
+/* CONTAINER 1 */
+
+.container1{
+    margin-bottom: 0;
+    padding: 0;
+    height: 770px;
+}
+
+/* Imagem de fundo */
 .imagem-fundo{
     width: 100%;
     height: 770px;
@@ -52,28 +58,24 @@ body{
 
 .img2 {
     position: absolute;
-    top: 204px; /* Ajuste esse valor conforme necessário */
-    left: 55%; /* Ajuste para o lado desejado */
-    width: 16.53156rem;
-    height: 320px;
+    top: 150px;
+    left: 55%; 
     border-radius: 3.0625rem;
 }
 .img3 {
-    width: 15rem;
-    height: 15rem;
     position: absolute;
     top: 110px; 
     left: 74%; 
     border-radius: 3.0625rem;
 }
 .img4 {
-    width: 15rem;
-    height: 15rem;
     position: absolute;
     top: 370px; 
     left: 74%; 
     border-radius: 3.0625rem;
 }
+
+/* Primeiro conteudo */
 .cont1{
     top: 500px; 
     left: 3%;
@@ -83,6 +85,8 @@ body{
     font-size: 4.375rem;
     font-weight: 400;
 }
+
+/* Primeiro texto */
 #p1{
     color: #FFF;
     font-size: 1.875rem;
@@ -96,7 +100,7 @@ body{
 }
 
 
-/* CONTAINER2 */
+/* CONTAINER 2 */
 .container2{
     width: 100%;
     height: 728px;
@@ -114,14 +118,17 @@ body{
     border: 0;
 }
 
+/* Texto */
 .text p{
     color: #000;
     font-size: 1.875rem;
     font-weight: 400;
     line-height: 2.5rem; /* 133.333% */
 }
-
-
+.container2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Segundo texto */
 #t2{
     color: #97684C;
     font-family: "Maiandra GD";
@@ -132,7 +139,7 @@ body{
     background: #CCCCBF;
 }
 
-
+/* Classe de texto do container 2 */
 .text{
     text-align: left; 
     width: 40%; 
@@ -141,8 +148,9 @@ body{
 }
 
 
-/* CONTAINER3 */
+/* CONTAINER 3 */
 
+/* Terceiro texto */
 #t3 {
     color: #9B6A44;
     font-family: "Maiandra GD";
@@ -153,12 +161,14 @@ body{
     text-align: center;
 }
 
+/* Classe que armazena todas as imagens */
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
+/* Imagens */
 .item img {
     width: 100%;
     border-radius: 8px;
@@ -201,6 +211,7 @@ body{
 
 }
 
+/* Footer */
 footer {
     width: 95rem;
     height: 140px;
@@ -210,24 +221,47 @@ footer {
     align-items: end;
 }
 
-footer #adm{
-    color: #FFF;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    margin: 5px;
+#adm img{
+    height: 70px;
+    width: 70px;
+    border-radius: 36px;
+    margin: 10px;
 }
-   
+
+/* Estilizando todos os textos*/
 p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0;
 }
 
-.container2 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+.item img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+ 
+  .item.aparecendo img {
+    opacity: 1;
+  } 
 
-.container1{
-    margin-bottom: 0;
-    padding: 0;
-    height: 770px;
-}
+/*Imagens aparecendo aos poucos */
+
+.img2, .img3, .img4 {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .img2.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .img3.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .img4.show {
+    opacity: 1;
+    transform: translateY(0);
+  }

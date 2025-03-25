@@ -2,10 +2,6 @@
 
 O site IARA é um espaço online que celebra a beleza natural em sua forma mais pura, unindo-a à sofisticação e ao encanto das lendas. Inspirado nas histórias das sereias e no brilho das ondas, o IARA te convida a explorar um universo mágico e inspirador.
 
-## Como acessar
-
-Na barra de endereços do navegador, digite o seguinte endereço: .
-
 
 ## Autores
 
@@ -13,7 +9,7 @@ Na barra de endereços do navegador, digite o seguinte endereço: .
 
 [Maria Eduarda Cacciatore](https://github.com/DudaCacciatore)
 
-[Raphaela Gomes]()
+[Raphaela Gomes](https://github.com/RaphaMaria)
 
 
 ## Contribuição
@@ -31,5 +27,8 @@ Sua participação é fundamental para o sucesso do IARA! Mesmo não sendo um pr
 
 Entre em contato conosco pelo e-mail: IaraSuporte@gmail.com
 
-## License
+## Licença
+Este projeto não possui uma licença de código aberto. Todos os direitos reservados aos autores.
+
+Junte-se a nós nesta jornada mágica e descubra a beleza que existe em você!
 
