@@ -142,6 +142,7 @@ h1{
 }
 
 .popup-buttons button {
+    cursor: pointer; 
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -160,6 +161,7 @@ h1{
 }
 
 #brincoPorDoSol{
+    cursor: pointer; 
     background-color:  #CB8B59;
     color: white;
     border: 0px;
@@ -170,6 +172,7 @@ h1{
     border-radius: 5px;
 }
 #colarPorDoSol{
+    cursor: pointer; 
     background-color:  #CB8B59;
     color: white;
     border: 0px;
@@ -181,6 +184,7 @@ h1{
 }
 
 #pulseraPorDoSol{
+    cursor: pointer; 
     background-color:  #CB8B59;
     color: white;
     border: 0px;

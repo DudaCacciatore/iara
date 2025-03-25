@@ -137,6 +137,7 @@ h1{
 }
 
 .popup-buttons button {
+    cursor: pointer; 
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -155,6 +156,7 @@ h1{
 }
 
 #braceleteTesouro{
+    cursor: pointer; 
     background-color:  #6A3D21;
     color: white;
     border: 0px;
@@ -165,6 +167,7 @@ h1{
     border-radius: 5px;
 }
 #brincoTesouro{
+    cursor: pointer; 
     background-color:  #6A3D21;
     color: white;
     border: 0px;
@@ -176,6 +179,7 @@ h1{
 }
 
 #colarTesouro{
+    cursor: pointer; 
     background-color:  #6A3D21;
     color: white;
     border: 0px;
