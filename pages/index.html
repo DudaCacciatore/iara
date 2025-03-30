@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="icon" href="../img/IARA.png" type="image/png">
     <script src="../animate/efeitoProdutosInicio.js" render></script>
-    <script src="../animate/imagensIndex.js" render></script>
+    <script src="../animate/imagensIndex.js"></script>
+    <script src="../animate/indexImg1.js" render></script>
+    <script src="../animate/indexImg2.js" render></script>
+    <script src="../animate/indexImg3.js" render></script>
+    <script src="../animate/indexImg4.js" render></script>
+    <script src="../animate/indexImg5.js" render></script>
+    <script src="../animate/indexImg6.js" render></script>
+
+
 </head>
 <body>
     <div class="pagina">
@@ -49,28 +57,117 @@
             <h1 id="t3">Mais Vendidos</h1>
             <div class="galeria">
                 <div class="item">
+                    <button id="aneis" class="botao-circular" onclick="indexImg1()">ℹ</button>
                     <img class="img6" src="../img/img1.png" alt="Anel dourado">
                 </div>
                 <div class="item">
+                    <button id="colares" class="botao-circular" onclick="abrirPopup()">ℹ</button>
                     <img class="img7" src="../img/img2.png" alt="Colar com pérolas">
                 </div>
                 <div class="item">
+                    <button id="brincos" class="botao-circular" onclick="abrirPopup()">ℹ</button>
                     <img class="img8" src="../img/image 3.png" alt="Brincos azuis">
                 </div>
                 <div class="item">
-
+                    <button id="anelSol" class="botao-circular2" onclick="abrirPopup()">ℹ</button>
                     <img class="img9" src="../img/image 2.png" alt="Anel com pedra">
                 </div>
                 <div class="item">
+                    <button id="berloque" class="botao-circular2" onclick="abrirPopup()">ℹ</button>
                     <img class="img10" src="../img/image 1.png" alt="Pulseira com berloques">
-
                 </div>
                 <div class="item">
+                    <button id = "brincos2"class="botao-circular" onclick="abrirPopup()">ℹ</button>
                     <img class="img11" src="../img/img6.png" alt="Brincos de pérola">
                 </div>
 
         </div>
         <br><br><br><br>
+
+        <div id="popup">
+            <div class="popup-content">
+                <h3>Conjunto de Anéis Ouro e Prata</h3>
+                <p class="pp">
+                    Um conjunto versátil e elegante, combinando a sofisticação do ouro com a delicadeza da prata, ideal para todas as ocasiões.
+                    <br>
+                    <p class="preco">R$264.57</p>
+                </p>
+                <div class="popup-buttons">
+                    <button class="Comprar" id="comprarAgora">Desejo comprar agora</button>
+                    <button class="cancel" id="fecharPopup">Quero continuar navegando pelo site!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup2">
+            <div class="popup-content">
+                <h3>Colar Concha de Ouro</h3>
+                <p class="pp">
+                    Um colar refinado com pingente de concha banhado a ouro, trazendo um toque de charme e conexão com a natureza.
+                    <br>
+                    <p class="preco">R$359.7</p> </p>
+                <div class="popup-buttons">
+                    <button class="Comprar" id="comprarAgora2">Desejo comprar agora</button>
+                    <button class="cancel" id="fecharPopup2">Quero continuar navegando pelo site!</button>
+                </div>
+            </div>
+        </div>
+       
+        <div id="popup3">
+            <div class="popup-content">
+                <h3>Brinco Azul Estrela do Mar</h3>
+                <p class="pp">
+                    Brincos vibrantes e delicados, inspirados no azul profundo do mar e na beleza única das estrelas-do-mar.
+                    <br>
+                    <p class="preco">R$196.9</p></p>
+                <div class="popup-buttons">
+                    <button class="Comprar" id="comprarAgora3">Desejo comprar agora</button>
+                    <button class="cancel" id="fecharPopup3">Quero continuar navegando pelo site!</button>
+                </div>
+            </div>
+        </div>
+        <div id="popup4">
+            <div class="popup-content">
+                <h3>Anel Sol Perolado</h3>
+                <p class="pp">
+                    Um anel encantador que combina o brilho do sol com a suavidade das pérolas, refletindo a harmonia entre luz e mar.
+                    <br>
+                    <p class="preco">R$154.26</p>
+                </p>
+                <div class="popup-buttons">
+                    <button class="Comprar" id="comprarAgora4">Desejo comprar agora</button>
+                    <button class="cancel" id="fecharPopup4">Quero continuar navegando pelo site!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup5">
+            <div class="popup-content">
+                <h3>Pulseira e Berloques Azuis</h3>
+                <p class="pp">
+                    Uma pulseira elegante com berloques em tons de azul, remetendo à serenidade e profundidade do oceano.
+                    <br>
+                    <p class="preco">R$523.8</p> </p>
+                <div class="popup-buttons">
+                    <button class="Comprar" id="comprarAgora5">Desejo comprar agora</button>''
+                    <button class="cancel" id="fecharPopup5">Quero continuar navegando pelo site!</button>
+                </div>
+            </div>
+        </div>
+       
+        <div id="popup6">
+            <div class="popup-content">
+                <h3>Brinco Perolado Praia</h3>
+                <p class="pp">
+                    Brincos sofisticados com detalhes perolados, evocando o brilho suave das conchas e a delicadeza da brisa do mar.
+                    <br>
+                    <p class="preco">R$350.99</p></p>
+                <div class="popup-buttons">
+                    <button class="Comprar" id="comprarAgora6">Desejo comprar agora</button>
+                    <button class="cancel" id="fecharPopup6">Quero continuar navegando pelo site!</button>
+                </div>
+            </div>
+        </div>
 
         <footer>
            <div id="adm"><a href="login.html"><img src="../img/IARA.png" alt=""></a></div>

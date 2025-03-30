@@ -125,9 +125,14 @@ h1{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#pp{
+.popup-content .pp{
     font-size: 15px;
-    
+    color: rgb(86, 84, 84);
+
+}
+
+.preco{
+    font-size: 25px;
 }
 
 .popup-buttons {
@@ -166,6 +171,11 @@ h1{
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+#braceleteTesouro:hover{
+    background-color:  #844c29;
+}
+
 #brincoTesouro{
     cursor: pointer; 
     background-color:  #6A3D21;
@@ -176,6 +186,10 @@ h1{
     width: 200px;
     margin-bottom: 10px;
     border-radius: 5px;
+}
+
+#brincoTesouro:hover{
+    background-color:  #844c29;
 }
 
 #colarTesouro{
@@ -189,6 +203,11 @@ h1{
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+#colarTesouro:hover{
+    background-color:  #844c29;
+}
+
 
 /* Footer */
 .footer{

@@ -11,7 +11,7 @@ document.getElementById("botao-entrar").addEventListener("click", async function
         });
 
         if (resposta.ok) {
-            window.location.href = "../pages/crud.html";
+            window.location.href = "../pages/collection.html";
         } else {
             const dados = await resposta.json();
             alert(dados.message);

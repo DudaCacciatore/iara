@@ -67,6 +67,10 @@ body{
     margin-top: 40px;
 }
 
+.botao-enviar-mensagem:hover{
+    background-color: #86522b;
+}
+
 /* Imagem */
 .img1{
     margin-top: 5rem;

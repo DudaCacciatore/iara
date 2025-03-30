@@ -1,0 +1,9 @@
+# Ignorar variáveis de ambiente
+.env
+
+# Ignorar a pasta de dependências do Node.js
+node_modules
+
+# Ignorar arquivos de log
+npm-debug.log
+yarn-error.log

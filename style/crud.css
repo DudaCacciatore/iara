@@ -27,8 +27,8 @@ h3{
 }
 
 h2, h3 {
-    color: #333; /* Cor escura para os títulos */
-    margin-bottom: 10px; /* ERspaço abaixo dos títulos */
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* Input */

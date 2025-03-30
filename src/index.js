@@ -1,7 +1,10 @@
+// Importando e instanciando dotenv
+require('dotenv').config();
+
 //Importando e instanciando o express
 const express = require("express")
 const app = express()
-const port = 3000 //Porta padrão 
+const port = process.env.PORT || 3000;
 
 //Importando e instanciando o mongoose
 const mongoose = require("mongoose")
@@ -15,15 +18,18 @@ app.use(express.json())
 //Ativando cors
 app.use(cors())
 
-//Conectando com o banco + verificando se o banco conectou
-mongoose.connect('mongodb+srv://mariacacciatore:duda1234@dbapiiara.2eety.mongodb.net/?retryWrites=true&w=majority&appName=dbApiIara')
+// Conectando com o banco usando a variável de ambiente
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
     .then(() => console.log("MongoDB conectado com sucesso!"))
-    .catch(err => console.error("Erro ao conectar ao MongoDB:", err))
+    .catch(err => console.error("Erro ao conectar ao MongoDB:", err));
 
 
 //Ouvindo a porta o tempo todo para qualuqer tipo de req e res
 app.listen(port, () => {
-    console.log('App running')
+    console.log(`App rodando na porta ${port}`);
 })
 
 

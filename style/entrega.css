@@ -58,6 +58,10 @@ body {
     border-radius: 9px;
 }
 
+.botao-ver-politica:hover{
+    background-color: #86522b;
+}
+
 /* Botão */
 #botao{
     background: none;
@@ -71,6 +75,7 @@ body {
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
+
 
 /* Imagem principal */
 .imagem-principal {
