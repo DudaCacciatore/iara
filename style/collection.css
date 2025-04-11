@@ -41,6 +41,28 @@ h1{
     transition: 0.2s ease-in-out;
 }
 
+.voltar{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    height: 60px;
+    margin-top: 170px;
+    background: none;
+    border: none; 
+    background-color: #df9e6b;
+    border-radius: 30px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(5, 5, 5, 0.5);
+}
+
+.voltar:hover{
+    background-color:#CB8B59;
+    width: 250px;
+    height: 70px;
+    transition: 0.2s ease-in-out;
+}
+
 .botoesCollections #b2{
     margin-left: 30px;
 }
@@ -49,4 +71,8 @@ p{
     font-size: 23px;
     margin-bottom: 70px;
     color: rgb(118, 118, 116);
+}
+
+a img{
+    width: 50px; ;
 }
